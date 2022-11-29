@@ -1,0 +1,9 @@
+ <mat-toolbar color="warn">
+    <span>Admin Dashboard</span>
+      <span class="example-spacer"></span>
+      <span [hidden]="!loggedIn" class="h6"><a md-button routerLink="/bookList" >View Books</a></span> &nbsp;&nbsp;&nbsp;
+      <span [hidden]="!loggedIn" class="h6"><a md-button routerLink="/addNewBook">Add a Book</a></span> &nbsp;&nbsp;&nbsp;
+      <span [hidden]="!loggedIn" class="h6"><a md-button>Logout</a></span>
+</mat-toolbar>
+
+<button mat-raised-button color="primary" (click)="toggleDisplay()">Toggle</button>
